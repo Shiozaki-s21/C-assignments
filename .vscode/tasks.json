@@ -7,14 +7,14 @@
             "command": "gcc",
             "args": [
                 "-g",
-                "test_proj/cprograms/main.c"
+                "test_proj/cprograms/main.c",
                 "-o",
                 "test_proj/cprograms/MAIN"
             ],
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build",
+            "label": "build1",
             "type": "shell",
             "command": "gcc",
             "args": [
@@ -30,6 +30,31 @@
                 "Assignments/Assignment1/Exercise07/c_print_combn.c",
                 "-o",
                 "Assignments/Assignment1/Main/MAIN"
+            ],
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build2",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "Assignments/Assignment2/Main/main.c",
+                "Assignments/Assignment2/Exercise00/vc_pt.c",
+                "Assignments/Assignment2/Exercise01/vc_ultimate_pt.c",
+                "Assignments/Assignment2/Exercise02/vc_swap.c",
+                "Assignments/Assignment2/Exercise03/vc_div_mod.c",
+                "Assignments/Assignment2/Exercise04/vc_ultimate_div_mod.c",
+                "Assignments/Assignment2/Exercise05/vc_putstr.c",
+                "Assignments/Assignment2/Exercise06/vc_strlen.c",
+                "Assignments/Assignment2/Exercise07/vc_strrev.c",
+                "Assignments/Assignment2/Exercise08/vc_atoi.c",
+                "Assignments/Assignment2/Exercise09/vc_sort_int_table.c",
+                "-o",
+                "Assignments/Assignment2/Main/MAIN"
             ],
             "problemMatcher": "$gcc"
         }

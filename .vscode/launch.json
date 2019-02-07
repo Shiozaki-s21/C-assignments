@@ -21,13 +21,28 @@
             "name": "Assignment1-Launch",
             "type": "cppdbg",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build1",
             "program": "${workspaceFolder}/Assignments/Assignment1/Main/MAIN",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Assignment2-Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build2",
+            "program": "${workspaceFolder}/Assignments/Assignment2/Main/MAIN",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // "internalConsoleOptions": "openOnFirstSessionStart",
+            // "externalConsole": false,
             "MIMode": "lldb"
         }
     ]
