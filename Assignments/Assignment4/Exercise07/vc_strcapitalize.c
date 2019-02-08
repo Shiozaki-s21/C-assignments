@@ -25,7 +25,7 @@ char *vc_strcapitalize(char *str)
             }
         }
 
-        // to upcase
+        // to up case
         if (flag)
         {
             if (97 <= *str && *str <= 122)
@@ -35,8 +35,8 @@ char *vc_strcapitalize(char *str)
             }
         }
 
-        // if *str is space or + or -, flag
-        if (*str == 32 || *str == 43 || *str == 45)
+        // if *str is not a-zA-Z
+        if ((*str < 65) || (*str >= 91 && *str <= 96) || (*str >= 123))
         {
             flag = true;
         }

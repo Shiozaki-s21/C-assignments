@@ -9,5 +9,17 @@
 int vc_fibonacci(int n)
 {
     printf("==================\n%1$s\n==================\n", __func__);
-    return 1;
+    if (n == 0)
+        return 1;
+    if (n < 0)
+        return 0;
+    int total = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        total *= i;
+    }
+    if (total == NULL || total < 0)
+        return 0;
+
+    return total;
 }
