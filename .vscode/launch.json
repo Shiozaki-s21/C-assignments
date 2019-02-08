@@ -44,6 +44,21 @@
             // "internalConsoleOptions": "openOnFirstSessionStart",
             // "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "Assignment3-Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build3",
+            "program": "${workspaceFolder}/Assignments/Assignment2/Main/MAIN",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // "internalConsoleOptions": "openOnFirstSessionStart",
+            // "externalConsole": false,
+            "MIMode": "lldb"
         }
     ]
 }

@@ -57,6 +57,29 @@
                 "Assignments/Assignment2/Main/MAIN"
             ],
             "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build3",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "Assignments/Assignment3/Main/main.c",
+                "Assignments/Assignment3/Exercise00/vc_iterative_factorial.c",
+                "Assignments/Assignment3/Exercise01/vc_recursive_factorial.c",
+                "Assignments/Assignment3/Exercise02/vc_iterative_power.c",
+                "Assignments/Assignment3/Exercise03/vc_recursive_power.c",
+                "Assignments/Assignment3/Exercise04/vc_fibonacci.c",
+                "Assignments/Assignment3/Exercise05/vc_sqrt.c",
+                "Assignments/Assignment3/Exercise06/vc_is_prime.c",
+                "Assignments/Assignment3/Exercise07/vc_find_next_prime.c",
+                "-o",
+                "Assignments/Assignment2/Main/MAIN"
+            ],
+            "problemMatcher": "$gcc"
         }
     ]
 }
