@@ -77,7 +77,30 @@
                 "Assignments/Assignment3/Exercise06/vc_is_prime.c",
                 "Assignments/Assignment3/Exercise07/vc_find_next_prime.c",
                 "-o",
-                "Assignments/Assignment2/Main/MAIN"
+                "Assignments/Assignment3/Main/MAIN"
+            ],
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build4",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "Assignments/Assignment4/Main/main.c",
+                "Assignments/Assignment4/Exercise00/vc_strcpy.c",
+                "Assignments/Assignment4/Exercise01/vc_strncpy.c",
+                "Assignments/Assignment4/Exercise02/vc_strstr.c",
+                "Assignments/Assignment4/Exercise03/vc_strcmp.c",
+                "Assignments/Assignment4/Exercise04/vc_strncmp.c",
+                "Assignments/Assignment4/Exercise05/vc_strupcase.c",
+                "Assignments/Assignment4/Exercise06/vc_strlowcase.c",
+                "Assignments/Assignment4/Exercise07/vc_strcapitalize.c",
+                "-o",
+                "Assignments/Assignment4/Main/MAIN"
             ],
             "problemMatcher": "$gcc"
         }
