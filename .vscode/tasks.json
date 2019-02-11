@@ -129,7 +129,7 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build5",
+            "label": "build6",
             "type": "shell",
             "command": "gcc",
             "args": [
