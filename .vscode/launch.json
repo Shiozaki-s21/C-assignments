@@ -41,8 +41,6 @@
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            // "internalConsoleOptions": "openOnFirstSessionStart",
-            // "externalConsole": false,
             "MIMode": "lldb"
         },
         {
@@ -56,8 +54,6 @@
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            // "internalConsoleOptions": "openOnFirstSessionStart",
-            // "externalConsole": false,
             "MIMode": "lldb"
         },
         {
@@ -71,8 +67,32 @@
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            // "internalConsoleOptions": "openOnFirstSessionStart",
-            // "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Assignment5-Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build5",
+            "program": "${workspaceFolder}/Assignments/Assignment5/Main/MAIN",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Assignment6-Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build6",
+            "program": "${workspaceFolder}/Assignments/Assignment6/Main/MAIN",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
             "MIMode": "lldb"
         }
     ]

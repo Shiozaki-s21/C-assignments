@@ -103,6 +103,48 @@
                 "Assignments/Assignment4/Main/MAIN"
             ],
             "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build5",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "Assignments/Assignment5/Main/main.c",
+                "Assignments/Assignment5/Exercise00/vc_strcpy.c",
+                "Assignments/Assignment5/Exercise01/vc_strncpy.c",
+                "Assignments/Assignment5/Exercise02/vc_strstr.c",
+                "Assignments/Assignment5/Exercise03/vc_strcmp.c",
+                "Assignments/Assignment5/Exercise04/vc_strncmp.c",
+                "Assignments/Assignment5/Exercise05/vc_strupcase.c",
+                "Assignments/Assignment5/Exercise06/vc_strlowcase.c",
+                "Assignments/Assignment5/Exercise07/vc_strlcat.c",
+                "Assignments/Assignment5/Exercise08/vc_strlcpy.c",
+                "-o",
+                "Assignments/Assignment5/Main/MAIN"
+            ],
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build5",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "Assignments/Assignment6/Main/main.c",
+                // "Assignments/Assignment6/Exercise00/libvc.c",
+                "Assignments/Assignment6/Exercise02/vc_print_params.c",
+                "Assignments/Assignment6/Exercise04/vc_sort_params.c",
+                "-o",
+                "Assignments/Assignment6/Main/MAIN"
+            ],
+            "problemMatcher": "$gcc"
         }
     ]
 }
