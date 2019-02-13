@@ -145,6 +145,47 @@
                 "Assignments/Assignment6/Main/MAIN"
             ],
             "problemMatcher": "$gcc"
-        }
+        },
+        {
+            "label": "build7",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "Assignments/Assignment7/Main/main.c",
+                // "Assignments/Assignment7/Exercise00/vc_strdup.c",
+                // "Assignments/Assignment7/Exercise01/vc_strncpy.c",
+                // "Assignments/Assignment7/Exercise02/vc_strstr.c",
+                // "Assignments/Assignment7/Exercise03/vc_strcmp.c",
+                // "Assignments/Assignment7/Exercise04/vc_strncmp.c",
+                // "Assignments/Assignment7/Exercise05/vc_strupcase.c",
+                // "Assignments/Assignment7/Exercise06/vc_strlowcase.c",
+                "-o",
+                "Assignments/Assignment7/Main/MAIN"
+            ],
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build8",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                // "-g",
+                // "-E",
+                // "-C",
+                // "-P",
+                // "-Wall",
+                // "-Wextra",
+                // "-Wpedantic",
+                "Assignments/Assignment8/Main/main.c",
+                "-o",
+                // "Assignments/Assignment8/Main/vc_boolean.h",
+                "Assignments/Assignment8/Main/MAIN"
+            ],
+            "problemMatcher": "$gcc"
+        },
     ]
 }
