@@ -1,8 +1,8 @@
 /*
  * @Author: Kazuya Takahashi 
  * @Date: 2019-02-14 12:18:56 
- * @Last Modified by:   Kazuya Takahashi 
- * @Last Modified time: 2019-02-14 12:18:56 
+ * @Last Modified by: Kazuya Takahashi
+ * @Last Modified time: 2019-02-14 13:55:16
  */
 
 
@@ -31,12 +31,34 @@ struct s_stock *vc_param_to_tab(int ac, char **av) {
         // split by space
         result -> words = vc_split_whitespaces(av[i]);   
 
+        printf("address of result%ul\n", &result);
+        printf("size is %d\n",result -> size_param);
+        printf("str is %s\n",result -> str);
+        printf("char is %s\n",result -> copy);
+        printf("words is %s\n",result -> words[0]);
+
         i++;
-        result++;
+        *result++;
     }
     //end of the array of result
+    result ++;
     result -> str = '\0';
     return result;
+}
+
+// Ex04
+void vc_show_tab(struct s_stock *stock) {
+    while((++stock -> str) != '\0') {
+       printf("size is ... %d\t", stock -> size_param );
+       printf("arguments is ... %s\t", stock -> copy );
+    }
+    stock--;
+    int i = 0;
+    while(stock -> size_param > ++i) {
+        printf("words[%d] is ... %s\t", i,stock -> words[i] );
+    }
+
+
 }
 
 // Ex03
@@ -44,14 +66,7 @@ struct s_stock *vc_param_to_tab(int ac, char **av) {
 int main(int argc, char *argv[])
 {
     t_stock *result = vc_param_to_tab(argc, argv);
-    
-    for(; result -> str != '\0'; result++) {
-        // show the result
-        printf("size_param %d\n", result -> size_param);
-        printf("str %s\n", result -> str);
-        printf("copy %s\n", result -> copy);
-        printf("word %s\n", result -> words[0]);
-    }
+    // vc_show_tab(result);
     return 1;
 }
 
