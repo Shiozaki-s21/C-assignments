@@ -1,3 +1,12 @@
+/*
+ * @Author: Kazuya Takahashi 
+ * @Date: 2019-02-14 12:18:56 
+ * @Last Modified by:   Kazuya Takahashi 
+ * @Last Modified time: 2019-02-14 12:18:56 
+ */
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
