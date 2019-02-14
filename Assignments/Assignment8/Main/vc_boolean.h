@@ -1,3 +1,10 @@
+/*
+ * @Author: Kazuya Takahashi Juan 
+ * @Date: 2019-02-13 15:26:55 
+ * @Last Modified by:   Kazuya Takahashi Juan 
+ * @Last Modified time: 2019-02-13 15:26:55 
+ */
+
 #ifndef VC_BOOLEAN_H
 #define VC_BOOLEAN_H
 

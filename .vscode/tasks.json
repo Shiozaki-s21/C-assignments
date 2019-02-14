@@ -173,7 +173,7 @@
             "type": "shell",
             "command": "gcc",
             "args": [
-                // "-g",
+                "-g",
                 // "-E",
                 // "-C",
                 // "-P",
@@ -181,9 +181,11 @@
                 // "-Wextra",
                 // "-Wpedantic",
                 "Assignments/Assignment8/Main/main.c",
+                "Assignments/Assignment8/Main/vc_strdup.c",
+                "Assignments/Assignment8/Main/vc_split_whitespaces.c",
                 "-o",
                 // "Assignments/Assignment8/Main/vc_boolean.h",
-                "Assignments/Assignment8/Main/MAIN"
+                "Assignments/Assignment8/Main/MAIN",
             ],
             "problemMatcher": "$gcc"
         },

@@ -1,12 +1,10 @@
-#ifdef VC_POINT_H
+#ifndef VC_POINT_H
 #define VC_POINT_H
 
-typedef struct point
+typedef struct t_point
 {
     int x;
     int y;
-} point;
-
-
+}t_point;
 
 #endif
