@@ -120,6 +120,19 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "Assignment9-Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build9",
+            "program": "${workspaceFolder}/Assignments/Assignment9/Main/MAIN",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
     ]
 }

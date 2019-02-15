@@ -189,5 +189,26 @@
             ],
             "problemMatcher": "$gcc"
         },
+        {
+            "label": "build9",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                // "-E",
+                // "-C",
+                // "-P",
+                // "-Wall",
+                // "-Wextra",
+                // "-Wpedantic",
+                "Assignments/Assignment9/Main/main.c",
+                "Assignments/Assignment9/Main/vc_strdup.c",
+                "Assignments/Assignment9/Main/vc_split_whitespaces.c",
+                "Assignments/Assignment9/Main/vc_strcmp.c",
+                "-o",
+                "Assignments/Assignment9/Main/MAIN",
+            ],
+            "problemMatcher": "$gcc"
+        },
     ]
 }
