@@ -1,9 +1,30 @@
-/**
- * File              : vc_split_whitespaces.c
- * Author            : Juan and Kazuya
- * Date              : Tue 12 Feb 2019
- */
+#include <stdio.h>
 #include <stdlib.h>
+
+int vc_strcmp(char *s1, char *s2)
+{
+    const int same = 0;
+    while (*s1 != '\0' || *s2 != '\0')
+    {
+        if (*s1 > *s2)
+        {
+            return 1;
+        }
+        else if (*s1 < *s2)
+        {
+            return -1;
+        }
+
+        if (*s1 == '\0')
+            return -1;
+        if (*s2 == '\0')
+            return 1;
+
+        s1++;
+        s2++;
+    }
+    return same;
+}
 
 static char *vc_strdup(char *src) {
 
@@ -22,9 +43,7 @@ static char *vc_strdup(char *src) {
 
 }
 
-
 char **vc_split_whitespaces(char *str){
-
     int num_str = 1;
     int currentlength = 0;
 
@@ -57,5 +76,31 @@ char **vc_split_whitespaces(char *str){
 	result[current_result] = NULL;
 
     return result;
+}
 
+
+void vc_sort_words(char **words) {
+    int i;
+    for(i = 0; words[i] != '\0'; i++){
+        for(int j = i + 1; words[j] != '\0'; j++){
+            if(0 < vc_strcmp(words[i], words[j])){
+                char *tmp = words[i];
+                words[i] = words[j];
+                words[j] = tmp;        
+            }
+        }
+    };
+}
+
+// Ex07
+int ex07(int argc, char const *argv[])
+{
+    char *str = "Hello World Goodbye";
+    char **words = vc_split_whitespaces(str);
+    vc_sort_words(words);
+    int i = 0;
+    while(*words != '\0'  ) {
+        printf("%s\n", *words);
+        *words ++;
+    }
 }
